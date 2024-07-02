@@ -4,7 +4,10 @@ import os
 from requests.adapters import HTTPAdapter, Retry
 
 servers = "https://bwsecondary.ddns.net:8080"
-auth_token = "e4474eef-d902-4fc4-83d5-9baa60dc2a26"
+auth_token = ""
+print("Input your authentication token. This can be found whenever you launch the game.")
+choice = input(">")
+auth_token = choice
 
 s = requests.Session()
 retries = Retry(total=5,backoff_factor=0.1,status_forcelist=[ 500, 502, 503, 504 ])
