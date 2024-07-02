@@ -5,7 +5,7 @@ from requests.adapters import HTTPAdapter, Retry
 
 servers = "https://bwsecondary.ddns.net:8080"
 auth_token = ""
-print("Input your authentication token. This can be found whenever you launch the game.")
+print("Input your authentication token. This can be found whenever you launch the game.\nThis is unnecessary if you only want to download a game.")
 choice = input(">")
 auth_token = choice
 
